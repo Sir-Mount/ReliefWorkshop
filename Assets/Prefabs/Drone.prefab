@@ -203,6 +203,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2025860681282472819}
+  - component: {fileID: 4493230728006000410}
+  - component: {fileID: 5792076099294928101}
   m_Layer: 0
   m_Name: Drone
   m_TagString: Untagged
@@ -220,8 +222,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 9.413616, y: 0.9226608, z: -0.31076145}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 5181499660463253408}
   - {fileID: 6316872272899338099}
@@ -229,6 +231,43 @@ Transform:
   - {fileID: 6557663985704934578}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4493230728006000410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3645586105348601932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54065dade5b354f34b0621ecf57637e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reloadTime: 1.5
+  elapsed: 0
+  bulletSpeed: 75
+  bullet: {fileID: 5625571086692889149, guid: 13a5615a6017c4ac2b9044b7432009cd, type: 3}
+--- !u!135 &5792076099294928101
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3645586105348601932}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 30
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5549831357063121169
 GameObject:
   m_ObjectHideFlags: 0
