@@ -27,7 +27,7 @@ public class BulletMovement : MonoBehaviour
     {
         if (collision.collider.tag == "Player")
         {
-            SceneManager.LoadScene( SceneManager.GetActiveScene().name );;
+            SceneManager.LoadScene( SceneManager.GetActiveScene().name );
         }
         
         Destroy(this);

@@ -25,9 +25,11 @@ public class enemyscript : MonoBehaviour
     
     void OnTriggerStay(Collider other)
     {
+        print("stay");
         //Check for a match with the specified name on any GameObject that collides with your GameObject
         if (other.CompareTag("Player"))
         {
+            Debug.Log("Do something here");
             elapsed += Time.fixedDeltaTime;
             if (elapsed > reloadTime)
             {
